@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://icon-library.com/images/pokeball-icon-transparent/pokeball-icon-transparent-6.jpg" type="image/png"> <!-- Added favicon link -->
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Pokemon Center</title>
+  <meta name="title" content="Pokemon Center">
+  <meta name="description" content="This is an eCommerce">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="#.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">Pokemon Center</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Collections</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+        <a href="login.html" class="navbar-action-btn">Log In</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="login.html" style="text-decoration: none;">
+          <button style="background-color: rgb(255, 106, 0); color: white; border: none; padding: 5px 10px; cursor: pointer; font-size: 16px; border-radius: 5px;">
+            Log In
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('bg2.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Journey Starts</span>Here
+          </h1>
+
+          <p class="hero-text">Find the perfect Pokémon gift for any occasion.</p>
+
+          <a href="#" class="btn">Shop Now</a>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="category">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Top</span> categories
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="plush.jpg" width="330" height="300" loading="lazy" alt="plush"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Plush</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="Clothing.jpg" width="330" height="300" loading="lazy" alt="Clothing"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Clothing</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="Card.png" width="330" height="300" loading="lazy" alt="Trading Card Game"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Trading Card Game</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="sticker.webp" width="330" height="300" loading="lazy" alt="Stickers"
+                    class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Stickers</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="category-card">
+
+                <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                  <img src="holiday.jpg" width="330" height="300" loading="lazy"
+                    alt="Holiday Special" class="img-cover">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Holiday Special</a>
+                </h3>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #OFFERS
+      -->
+
+      <section class="section offer" aria-label="offer">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="offer-card has-bg-image img-holder" style="position: relative; --width: 540; --height: 374; background-image: url('https://wallpaperaccess.com/full/135120.png');">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5); z-index: 1;"></div>
+                
+                <p class="card-subtitle" style="position: relative; z-index: 2;">Selected Items. Online Only.</p>
+                
+                <h3 class="h3 card-title" style="position: relative; z-index: 2;">
+                  Winter Special <span class="span">Deals</span>
+                </h3>
+                
+                <a href="#" class="btn" style="position: relative; z-index: 2;">Read More</a>
+              </div>
+            </li>
+            
+            <li>
+              <div class="offer-card has-bg-image img-holder" style="position: relative; --width: 540; --height: 374; background-image: url('https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/12/wiglett-and-sleeping-cubone-pokemon-plushes.jpg');">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5); z-index: 1;"></div>
+                
+                <p class="card-subtitle" style="position: relative; z-index: 2;">Original Squishmallows</p>
+                
+                <h3 class="h3 card-title" style="position: relative; z-index: 2;">
+                  Shop new arrival<span class="span">plush</span>
+                </h3>
+                
+                <a href="#" class="btn" style="position: relative; z-index: 2;">Read More</a>
+              </div>
+            </li>
+            
+            <li>
+              <div class="offer-card has-bg-image img-holder" style="position: relative; --width: 540; --height: 374; background-image: url('https://gonintendo.com/attachments/image/10966/file/medium-c686678144421c784532a99e8cf7ffba.webp');">
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.5); z-index: 1;"></div>
+                
+                <p class="card-subtitle" style="position: relative; z-index: 2;">Our Brand You Will Love</p>
+                
+                <h3 class="h3 card-title" style="position: relative; z-index: 2;">
+                  New in this <span class="span">year</span>
+                </h3>
+                
+                <a href="#" class="btn" style="position: relative; z-index: 2;">Read More</a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Best</span> Seller
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://www.wikihow.com/images/5/51/Sell-Your-Pokemon-Cards-Step-13.jpg" width="360" height="360" loading="lazy"
+                    alt="Product" class="img-cover default">
+                  <img src="https://www.wikihow.com/images/5/51/Sell-Your-Pokemon-Cards-Step-13.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Pokemon Cards</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pokemon Season 1 Trading Cards</a>
+                  </h3>
+
+                  <data class="card-price" value="15">$35.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://www.asakura-japan.com/data/asakura-japan/product/20161104_6734dc.jpg" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover default">
+                  <img src="https://www.asakura-japan.com/data/asakura-japan/product/20161104_6734dc.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Pokemon Plush</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pikachu X Delibird</a>
+                  </h3>
+
+                  <data class="card-price" value="45">$55.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://i.pinimg.com/originals/5a/af/cd/5aafcdbaca9c94de33588acaffb0f7f5.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover default">
+                  <img src="https://i.pinimg.com/originals/5a/af/cd/5aafcdbaca9c94de33588acaffb0f7f5.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Clothing</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">jigglypuff Hoodie</a>
+                  </h3>
+
+                  <data class="card-price" value="45">$250.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://www.yiassu.com/wp-content/uploads/2023/01/Genuine-Pikachu-Creative-Anime-Cartoon-Doll-Keychain-Pokemon-Cartoon-Doll-Keyring-Bag-Car-Key-Chain-Ring.jpg_640x640-768x768.png" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover default">
+                  <img src="https://www.yiassu.com/wp-content/uploads/2023/01/Genuine-Pikachu-Creative-Anime-Cartoon-Doll-Keychain-Pokemon-Cartoon-Doll-Keyring-Bag-Car-Key-Chain-Ring.jpg_640x640-768x768.png" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Keychain</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pichu Keychain</a>
+                  </h3>
+
+                  <data class="card-price" value="49">$15.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://images.bonanzastatic.com/afu/images/1146/e537/0728_5006176468/s-l1600.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover default">
+                  <img src="https://images.bonanzastatic.com/afu/images/1146/e537/0728_5006176468/s-l1600.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Coffee Mug</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pikachu Coffee Mug</a>
+                  </h3>
+
+                  <data class="card-price" value="85">$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://i.pinimg.com/originals/66/15/cf/6615cf02cdcfd75941c5ba5cc4c6ee8b.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover default">
+                  <img src="https://i.pinimg.com/originals/66/15/cf/6615cf02cdcfd75941c5ba5cc4c6ee8b.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Games</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">NITENDO: Game boy</a>
+                  </h3>
+
+                  <data class="card-price" value="85">$65.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/misc/_tiles/pokemon-center/08192021/slider/01.jpg" width="360" height="360" loading="lazy"
+                    alt="">
+                  <img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/misc/_tiles/pokemon-center/08192021/slider/01.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Plush</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Piplup plush</a>
+                  </h3>
+
+                  <data class="card-price" value="85">$80.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/12/pokemon-furniture.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover default">
+                  <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/12/pokemon-furniture.jpg" width="360" height="360" loading="lazy"
+                    alt="" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <div class="rating-wrapper yellow">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <span class="span">Furniture</span>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Ditto Sofa</a>
+                  </h3>
+
+                  <data class="card-price" value="55">$850.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service">
+        <div class="container">
+
+          <img src="https://icon-library.com/images/pokeball-icon-transparent/pokeball-icon-transparent-6.jpg" width="122" height="136" loading="lazy" alt="" class="img">
+
+          <h2 class="h2 section-title">
+            <span class="span">Gotta Catch</span> 'Em All!
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://www.clipartkey.com/mpngs/m/311-3114647_icon-delivery-services-free-clipart-png-download-same.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Free Same-Day Delivery</h3>
+
+                <p class="card-text">
+                  Order by 2pm local time to get free delivery on orders $50+ today.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://muhancorporate.com.au/Userdefined/images/icons/30-days-icon.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">30 Day Return</h3>
+
+                <p class="card-text">
+                  30% off your first order.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://logowik.com/content/uploads/images/secure-payment2785.jpg" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Security payment</h3>
+
+                <p class="card-text">
+                  25% off your online order of $50+. Available at most locations.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="https://www.citypng.com/public/uploads/preview/transparent-call-customer-service-support-247-black-icon-21635328951o1xmqbeapm.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">24/7 Support</h3>
+
+                <p class="card-text">
+                  Having trouble? Consult with us.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" style="background-image: url('https://cdn.wallpapersafari.com/7/85/dDBH5Q.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Pokemon Center</a>
+
+          <p class="footer-text">
+            If you have any question, please contact us at <a href="mailto:pokemon@gmail.com"
+              class="link">pokemon@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                AlpaSunshine City Mall in Ikebukuro, Tokyo, Japan
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+16234567891011" class="contact-link">(+1)-1234-50-678</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporate</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Track Order</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Resource Center</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Made by <a href="#" class="copyright-link">CodeCrafterSristi</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="script.js"></script>
+  <script nomodule src="script.js"></script>
+  <!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
